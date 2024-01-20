@@ -6,3 +6,37 @@ document.addEventListener("mousemove",function(dets){
     cursorBlur.style.left = dets.x-50+"px";
     cursorBlur.style.top = dets.y-50+"px";
 })
+
+gsap.to("#nav",{
+    backgroundColor : "#191970",
+    paddingTop : 3,
+    paddingBottom : 3,
+    scrollTrigger:{
+        trigger : "#nav",
+        scroller : "body",
+        start : "top -10%",
+        scrub : 2
+    }
+
+})
+gsap.to("img",{
+    width : 100,
+    height : 60,
+    scrollTrigger:{
+        trigger : "#nav",
+        scroller : "body",
+        start : "top -10%",
+        scrub : 3
+    }
+})
+
+gsap.to("#main",{
+    backgroundColor :  "#191970",
+    scrollTrigger:{
+        trigger : "#main",
+        scroller : "body",
+        start : "top -20%",
+        end: "top -80%",
+        scrub: 3
+    }
+})
