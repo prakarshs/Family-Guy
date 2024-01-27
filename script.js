@@ -7,6 +7,23 @@ document.addEventListener("mousemove", function (dets) {
     cursorBlur.style.top = dets.y - 50 + "px";
 })
 
+var navItems = document.querySelectorAll("#nav-txt a");
+navItems.forEach(function(elem){
+    elem.addEventListener("mouseenter",function(){
+        cursor.style.scale = 3;
+        cursor.style.border = "1px solid #FED54A";
+        cursor.style.backgroundColor = "transparent";
+        cursor.style.transition = "all ease 0.1s"
+    })
+    elem.addEventListener("mouseleave",function(){
+        cursor.style.scale = 1;
+        cursor.style.border = "0px solid #FED54A";
+        cursor.style.backgroundColor = "#FED54A";
+        cursor.style.transition = "none"
+    })
+     
+});
+
 function scrollDown(sectionId) {
     var section = document.getElementById(sectionId);
     if (section) {

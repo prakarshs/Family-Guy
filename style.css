@@ -25,7 +25,8 @@ p {
     position: fixed;
     background-color: #FED54A;
     border-radius: 50%;
-    z-index: 100;
+    z-index: 999;
+    pointer-events: none;
 }
 
 #cursor-blur {
@@ -51,7 +52,7 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     padding: 20px 60px;
     position: fixed;
-    z-index: 999;
+    z-index: 900;
     cursor: pointer;
 }
 
