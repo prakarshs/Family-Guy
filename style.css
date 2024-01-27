@@ -36,11 +36,12 @@ p {
     filter: blur(20px);
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     width: 10px;
     background-color: #191970;
 }
-body::-webkit-scrollbar-thumb{
+
+body::-webkit-scrollbar-thumb {
     background-color: #FED54A;
     border-radius: 5px;
 }
@@ -50,7 +51,7 @@ body::-webkit-scrollbar-thumb{
     padding: 20px 60px;
     position: fixed;
     z-index: 999;
-    /* background-color: black; */
+    cursor: pointer;
 }
 
 #nav-items {
@@ -86,7 +87,7 @@ body::-webkit-scrollbar-thumb{
     background-color: rgba(0, 0, 0, 0.45);
 }
 
-#page1 {
+#home {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -97,14 +98,14 @@ body::-webkit-scrollbar-thumb{
 
 }
 
-#page1 h1 {
+#home h1 {
     font-size: 200px;
     text-transform: uppercase;
     position: relative;
     z-index: 10;
 }
 
-#page1 h1::before {
+#home h1::before {
     content: "FAMILY GUY";
     position: absolute;
     color: black;
@@ -114,17 +115,39 @@ body::-webkit-scrollbar-thumb{
     z-index: -1;
 }
 
-#page1 p {
-    font-size: 15px;
-    line-height: 20px;
+#home p {
+    font-size: 20px;
+    line-height: 30px;
     margin: 10px;
     text-align: center;
-    width: 50%;
+    width: 80%;
 }
 
-#page2 {
+#characters {
     width: 100%;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 50px;
+}
+
+#characters #character-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#characters #character-text h2 {
+    font-size: 100px;
+}
+
+#characters #character-text p {
+    width: 60%;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
 }
 
 .scroller-content {
@@ -155,11 +178,35 @@ body::-webkit-scrollbar-thumb{
     -webkit-text-stroke: 3px #FED54A;
 }
 
-.scroller-content h4:hover{
+.scroller-content h4:hover {
     color: #FED54A;
 }
 
+#deaths {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
 
+#deaths h2 {
+    font-size: 100px;
+}
+
+#deaths .death-text p {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+#deaths .death-card {
+    width: 90%;
+}
+
+#deaths .death-card .death-text {
+    width: 70%;
+}
 
 
 @keyframes scroll {
