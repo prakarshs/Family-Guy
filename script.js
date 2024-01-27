@@ -43,7 +43,7 @@ gsap.to("#nav", {
     }
 
 })
-gsap.to("img", {
+gsap.to("#logo img", {
     width: 100,
     height: 60,
     scrollTrigger: {
