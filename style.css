@@ -184,7 +184,7 @@ body::-webkit-scrollbar-thumb {
 
 #deaths {
     position: relative;
-    height: 100vh;
+    height: 170vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -193,6 +193,7 @@ body::-webkit-scrollbar-thumb {
 
 #deaths h2 {
     font-size: 100px;
+    margin-bottom: 20px;
 }
 
 #deaths .death-text p {
@@ -200,12 +201,48 @@ body::-webkit-scrollbar-thumb {
     line-height: 30px;
 }
 
+#deaths .death-text {
+    display: flex;
+    align-items: center;
+}
+
 #deaths .death-card {
     width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 #deaths .death-card .death-text {
     width: 70%;
+}
+
+#deaths .death-card .death-image {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: top;
+}
+
+#death1 {
+    background-image: url(assets/death-characters/brian.png);
+}
+
+#death2 {
+    background-image: url(assets/death-characters/vinny.png);
+}
+
+#death3 {
+    background-image: url(assets/death-characters/diane.png);
+}
+
+#death4 {
+    background-image: url(assets/death-characters/muriel.png);
+}
+
+#death5 {
+    background-image: url(assets/death-characters/francis.png);
 }
 
 
