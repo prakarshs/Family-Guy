@@ -36,6 +36,15 @@ p {
     filter: blur(20px);
 }
 
+body::-webkit-scrollbar{
+    width: 10px;
+    background-color: #191970;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #FED54A;
+    border-radius: 5px;
+}
+
 #nav {
     width: 100%;
     padding: 20px 60px;
