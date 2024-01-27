@@ -68,13 +68,53 @@ gsap.to("#main", {
 gsap.from(".death-image",{
     y:50,
     opacity:0,
-    duration:1,
-    stagger: 0.8,
+    duration:3,
+    stagger: 1,
     scrollTrigger:{
         trigger:".death-image",
         scroller:"body",
         start:"top 70%",
-        start:"top 68%",
+        scrub:3
+    }
+})
+
+gsap.from("#q1",{
+    y:-50,
+    x:-50,
+    opacity:0,
+    duration:1,
+    scrollTrigger:{
+        trigger:"#q1, #q2",
+        scroller:"body",
+        start:"top 80%",
+        end:"top 78%",
+        scrub:3
+    }
+})
+
+gsap.from("#q2",{
+    y:50,
+    x:50,
+    opacity:0,
+    duration:1,
+    scrollTrigger:{
+        trigger:"#q2",
+        scroller:"body",
+        start:"top 78%",
+        end:"top 72%",
+        scrub:3
+    }
+})
+
+gsap.from("#watch-content p",{
+    opacity:0,
+    duration:1,
+    scale:0.5,
+    scrollTrigger:{
+        trigger:"#q2",
+        scroller:"body",
+        start:"top 80%",
+        end:"top 78%",
         scrub:3
     }
 })
