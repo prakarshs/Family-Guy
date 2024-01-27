@@ -64,3 +64,17 @@ gsap.to("#main", {
         scrub: 3
     }
 })
+
+gsap.from(".death-image",{
+    y:50,
+    opacity:0,
+    duration:1,
+    stagger: 0.8,
+    scrollTrigger:{
+        trigger:".death-image",
+        scroller:"body",
+        start:"top 70%",
+        start:"top 68%",
+        scrub:3
+    }
+})
