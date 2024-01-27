@@ -13,6 +13,7 @@ body {
 
 h1,
 h2,
+h3,
 h4,
 p {
     color: aliceblue;
@@ -223,6 +224,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 50%;
     background-size: cover;
     background-position: top;
+    overflow: hidden;
 }
 
 #death1 {
@@ -245,6 +247,27 @@ body::-webkit-scrollbar-thumb {
     background-image: url(assets/death-characters/francis.png);
 }
 
+.image-overlay {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    background-color: #fed44aa0;
+    transition: all ease 0.5s;
+    opacity: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-overlay:hover {
+    opacity: 1;
+}
+
+.image-overlay h3{
+    font-size: 50px;
+
+}
 
 @keyframes scroll {
 
